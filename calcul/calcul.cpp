@@ -2,10 +2,38 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int choice;
+    double a, b;
+    setlocale(0, "UKR");
+    cout << "Введіть числа" << endl; cin >> a >> b;
+    cout << "Виберіть операцiю"<<endl;
+    cout << "1-Віднімання"<<endl;
+    cout << "2-Додавання"<<endl;
+    cout << "3-Множення"<<endl;
+    cout << "4-Ділення"<<endl;
+    cin >> choice;
+    switch (choice)
+    {
+    case 1: {
+        substract(a, b);
+        break;
+    }case 2: {
+        add(a, b);
+        break;
+    }case 3: {
+        multiply(a, b);
+        break;
+    }case 4: {
+        divide(a, b);
+        break;
+    }
+    default:
+        break;
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
