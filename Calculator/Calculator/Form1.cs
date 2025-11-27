@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Calculator
 {
-    public partial class Form1 : Form
+    public partial class Калькулятор : Form
     {
-        public Form1()
+        public Калькулятор()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            CalculatorEngine.Calculate(num1,num2,comboBox1,result);
         }
     }
 }

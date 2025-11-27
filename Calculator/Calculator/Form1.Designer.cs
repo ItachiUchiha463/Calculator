@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    partial class Form1
+    partial class Калькулятор
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Калькулятор));
             num1 = new TextBox();
             num2 = new TextBox();
             result = new TextBox();
@@ -62,7 +62,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "+", "-", "=", "*", "^" });
+            comboBox1.Items.AddRange(new object[] { "+", "-", "/", "*", "^", "=" });
             comboBox1.Location = new Point(143, 163);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
@@ -88,7 +88,7 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // Form1
+            // Калькулятор
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -100,7 +100,7 @@
             Controls.Add(result);
             Controls.Add(num2);
             Controls.Add(num1);
-            Name = "Form1";
+            Name = "Калькулятор";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
