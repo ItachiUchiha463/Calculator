@@ -6,7 +6,7 @@ namespace Calculator
         {
             InitializeComponent();
         }
-        
+
         private void PerformCalculation()
         {
             try
@@ -26,9 +26,9 @@ namespace Calculator
                     textBoxResult.Text = "";
                     return;
                 }
-                
+
                 string op = comboBoxOperations.SelectedItem?.ToString() ?? "+";
-                
+
                 double result = op switch
                 {
                     "+" => num1 + num2,
@@ -39,7 +39,7 @@ namespace Calculator
                     "^" => Math.Pow(num1, num2),
                     _ => double.NaN
                 };
-                
+
                 if (double.IsNaN(result) || double.IsInfinity(result))
                     textBoxResult.Text = "Помилка";
                 else
@@ -58,7 +58,7 @@ namespace Calculator
                 textBoxResult.Text = "Помилка";
             }
         }
-        
+
         private void UpdateOperationSign()
         {
             if (comboBoxOperations.SelectedItem is string selectedOp)
@@ -66,4 +66,5 @@ namespace Calculator
                 labelSign.Text = selectedOp;
             }
         }
-        
+    }
+}
