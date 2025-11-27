@@ -35,6 +35,9 @@
             comboBox1 = new ComboBox();
             label1 = new Label();
             button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
             SuspendLayout();
             // 
             // num1
@@ -88,12 +91,42 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.Location = new Point(120, 319);
+            button2.Name = "button2";
+            button2.Size = new Size(125, 94);
+            button2.TabIndex = 6;
+            button2.Text = "очистити";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(520, 255);
+            button3.Name = "button3";
+            button3.Size = new Size(136, 77);
+            button3.TabIndex = 7;
+            button3.Text = "змінити  фон";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(10, 11);
+            button4.Name = "button4";
+            button4.Size = new Size(225, 110);
+            button4.TabIndex = 8;
+            button4.Text = "оцінити проект від 1/10";
+            button4.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(762, 662);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(comboBox1);
@@ -114,5 +147,8 @@
         private ComboBox comboBox1;
         private Label label1;
         private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
     }
 }
