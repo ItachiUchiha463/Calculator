@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            num1 = new TextBox();
+            num2 = new TextBox();
+            result = new TextBox();
             comboBox1 = new ComboBox();
             label1 = new Label();
             button1 = new Button();
-            button2 = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // num1
             // 
-            textBox1.Location = new Point(12, 163);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 0;
+            num1.Location = new Point(12, 163);
+            num1.Name = "num1";
+            num1.Size = new Size(125, 27);
+            num1.TabIndex = 0;
+            num1.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // num2
             // 
-            textBox2.Location = new Point(300, 164);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 1;
+            num2.Location = new Point(300, 164);
+            num2.Name = "num2";
+            num2.Size = new Size(125, 27);
+            num2.TabIndex = 1;
             // 
-            // textBox3
+            // result
             // 
-            textBox3.Location = new Point(509, 163);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 2;
+            result.Location = new Point(509, 163);
+            result.Name = "result";
+            result.Size = new Size(125, 27);
+            result.TabIndex = 2;
             // 
             // comboBox1
             // 
@@ -80,21 +80,13 @@
             // 
             // button1
             // 
-            button1.Location = new Point(420, 274);
+            button1.Location = new Point(323, 358);
             button1.Name = "button1";
-            button1.Size = new Size(141, 68);
+            button1.Size = new Size(127, 105);
             button1.TabIndex = 5;
             button1.Text = "роз'вязати";
             button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(217, 274);
-            button2.Name = "button2";
-            button2.Size = new Size(133, 68);
-            button2.TabIndex = 6;
-            button2.Text = "очистити";
-            button2.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
@@ -102,13 +94,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(762, 662);
-            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(comboBox1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(result);
+            Controls.Add(num2);
+            Controls.Add(num1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -117,12 +108,11 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox num1;
+        private TextBox num2;
+        private TextBox result;
         private ComboBox comboBox1;
         private Label label1;
         private Button button1;
-        private Button button2;
     }
 }
